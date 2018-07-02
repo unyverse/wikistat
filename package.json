@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/unyverse/wikistat/issues"
   },
-  "homepage": "https://github.com/unyverse/wikistat#readme"
+  "homepage": "https://github.com/unyverse/wikistat#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
