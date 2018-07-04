@@ -21,7 +21,7 @@ html, body {
 
 body {
 	font: 400 16px 'Archivo', sans-serif;
-	background: linear-gradient(135deg, #ff9851 0%,#ff6b52 100%);
+	background: linear-gradient(135deg, #0FF0B3 0%, #036ED9 100%);
 	overflow-y: auto;
 	box-sizing: border-box;
 	color: #101010;
@@ -36,14 +36,14 @@ body {
 }
 
 .search-cont {
-	width: 520px;
+	width: 640px;
 	height: 40px;
 	display: flex;
 	flex-direction: row;
 }
 
 .search-input {
-	width: 470px;
+	width: 590px;
 	height: 40px;
 	background: #f0f0f0;
 	border: none;
@@ -64,8 +64,8 @@ body {
 }
 
 .graph-cont {
-	width: 520px;
-	height: 240px;
+	width: 640px;
+	height: 360px;
 	border-radius: 6px;
 	margin-top: 10px;
 	background: #f0f0f0;
