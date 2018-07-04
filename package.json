@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/unyverse/wikistat#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "chalk": "^2.4.1",
     "express": "^4.16.3"
   }

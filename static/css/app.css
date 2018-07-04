@@ -4,6 +4,7 @@
 	box-sizing: inherit;
 	font: inherit;
 	overflow: hidden;
+	flex-shrink: 0;
 }
 
 *:focus {
@@ -23,6 +24,7 @@ body {
 	background: linear-gradient(135deg, #ff9851 0%,#ff6b52 100%);
 	overflow-y: auto;
 	box-sizing: border-box;
+	color: #101010;
 }
 
 .view {
@@ -33,16 +35,49 @@ body {
 	min-height: 100%;
 }
 
-.article-input, .graph-cont {
-	flex-shrink: 0;
+.search-cont {
+	width: 520px;
+	height: 40px;
+	display: flex;
+	flex-direction: row;
 }
 
-.article-input {
-	width: 320px;
+.search-input {
+	width: 470px;
 	height: 40px;
 	background: #f0f0f0;
 	border: none;
 	border-radius: 6px;
 	letter-spacing: 1px;
 	padding: 0 12px;
+	margin-right: 10px;
+}
+
+.search-btn {
+	width: 40px;
+	height: 40px;
+	border-radius: 6px;
+	background: #f0f0f0;
+	border: none;
+	font-size: 26px !important;
+	cursor: pointer;
+}
+
+.graph-cont {
+	width: 520px;
+	height: 240px;
+	border-radius: 6px;
+	margin-top: 10px;
+	background: #f0f0f0;
+	transition: height 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+.graph-cont.hidden {
+	height: 0;
+	opacity: 0;
+}
+
+.graph {
+	height: 100%;
+	width: 100%;
 }

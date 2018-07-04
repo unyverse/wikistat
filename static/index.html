@@ -4,13 +4,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/css/app.css">
-	<link href="https://fonts.googleapis.com/css?family=Archivo:400,600" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo:400,600">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<title>WikiStat</title>
 </head>
 <body>
 	<div class="view">
-		<input type="text" class="article-input">
-		<div class="graph-cont">
+		<div class="search-cont">
+			<input type="text" placeholder="Wikipedia Article Name" class="search-input">
+			<button class="search-btn material-icons">search</button>
+		</div>
+		<div class="graph-cont hidden">
 			<div class="graph"></div>
 		</div>
 	</div>
