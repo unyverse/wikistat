@@ -4,8 +4,14 @@ const eE = (e, t, c) => e.addEventListener(t, c);
 const qE = (q, t, c) => eE(qS(q), t, c);
 const wait = t => new Promise(r => setTimeout(r, t));
 
+let chart;
+
 qE('.search-btn', 'click', e => {
 	qS('.graph-cont').classList.add('hidden');
+
+	if (chart){
+        chart.destroy();
+    }
 
 	fetch(`/api/${qS('.search-input').value.replace(/\s/g, '_')}`).then(r => r.json()).then(r => {
 		const data = r.map(x => x.views);
@@ -17,7 +23,7 @@ qE('.search-btn', 'click', e => {
 		gradient.addColorStop(0, "#036ED9");
 		gradient.addColorStop(1, "#0FF0B3");
 
-		const chart = new Chart(ctx, {
+		chart = new Chart(ctx, {
 			type: 'line',
 			data: {
 				labels,
